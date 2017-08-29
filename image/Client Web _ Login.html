@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://my.sagicorjamaica.com/ClientWeb/User/Login?ReturnUrl=%2fClientweb%2f -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=8; IE=9; IE=EDGE">
+    <meta name="author" content="Orane C.">
+     <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Client Web | Login</title> 
+    <link rel="icon" type="image/ico" href="https://my.sagicorjamaica.com/ClientWeb/Content/images/sagicor-fav-icon.png"> 
+    <link href="./Client Web _ Login_files/style.css" rel="stylesheet">
+    <link href="./Client Web _ Login_files/reset.css" rel="stylesheet">
+    <link href="./Client Web _ Login_files/ClientWebStyle1.0.css" rel="stylesheet" type="text/css">
+    <link href="./Client Web _ Login_files/style1.0.css" rel="stylesheet" type="text/css">   
+    <link href="./Client Web _ Login_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./Client Web _ Login_files/font-awesome-ie7.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./Client Web _ Login_files/jquery-1.10.2.js.download"></script> 
+    <script src="./Client Web _ Login_files/jquery.validate.min.js.download" type="text/javascript"></script>
+    <script src="./Client Web _ Login_files/jquery.validate.unobtrusive.min.js.download" type="text/javascript"></script>
+      <style>  
+        #modal-forget input[type="text"], form input[type="password"] {
+        width: 80%;
+        height: 40px;
+        padding-left: 15px;
+        background: rgb(212, 212, 212);
+        border: none; 
+        color: rgb(56, 56, 53);
+        outline: none; 
+        }
+        .md-content input[type="text"]{
+          background-color: rgb(212, 212, 212);
+           padding-left: 15px;
+          border: none; 
+        }
+        #terms a {
+        color:#2C98D5 !important;
+        }
+        h4 {
+         margin:0% !important;
+        }
+
+        a {
+            color: #0d1fe6;
+            text-decoration: none;
+        }
+
+        .flat-form2 {
+            height:auto!important;
+            min-height:0px!important;
+        }
+    </style> 
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var endpoint = "//freegeoip.net/json/";
+            // var endpoint="//www.geoplugin.net/json.gp";
+
+            $.get(endpoint, function (data) {
+                try {
+                    var country = data.country_name;
+                    var region = data.region_name;
+                    var location = ''
+                    var ip = data.ip;
+
+                    //var country = data.geoplugin_countryName;
+                    //var region = data.geoplugin_region;
+                    //var city = data.geoplugin_city
+                    //var ip = data.geoplugin_request;
+                    //var location = '';
+                    //if (city != undefined && city != '') {
+                    //    location =location;
+                    //}
+                    if (region != undefined && region != '') {
+                        location += region + ', ';
+                    }
+                    if (country != undefined && country != '') {
+                        location += country;
+                    }
+
+                    $('#IP').val(ip);
+                    $('#Location').val(location);
+                } catch (e) {
+
+                }
+            });
+
+
+            $('.md-content').find('input[type="text"]').each(function () {
+
+                $(this).blur(function () {
+                    $(this).css('background-color', '#d4d4d4');
+                });
+                $(this).focus(function () {
+                    $(this).css('background-color', '#f1f7b1');
+                });
+            });
+
+            $('.flat-form').find('input[type="text"]').each(function () {
+
+                $(this).blur(function () {
+                    $(this).css('background-color', '#d4d4d4');
+                });
+                $(this).focus(function () {
+                    $(this).css('background-color', '#f1f7b1');
+                });
+            });
+
+
+
+        }); 
+
+        var RecaptchaOptions = { theme: 'white' };
+   
+    </script>
+    
+</head>
+<body>
+     <div class="topBannerLogo"> 
+        <div style="width:100%; height:80px;">
+            <div style="width:300px;float:left; padding-left:25px;">
+                <img class="sag_logo" src="./Client Web _ Login_files/logo_1.jpg" alt="Logo" style="height:80px;">
+
+            </div>
+            <div class="floatRight" style="width:500px; padding-right:25px;">
+                <div class="floatRight logo_details" style="text-align:right;">
+      
+                    <div class="contact_info"><i class="icon-phone grayColour"></i><span class="grayColour"><b> CALL TOLL FREE </b></span> <span class="blueColour"><b> 1 888 SAGICOR (724-4267)</b></span> <br>
+                    </div> 
+                    <img src="./Client Web _ Login_files/client_web_logo.jpg" alt="ClientLogo"><br>
+                        <span id="terms"><a href="https://my.sagicorjamaica.com/ClientWeb/Customer/TermsAndConditions">Terms and Conditions of Use</a></span><br>
+                </div>
+               
+            </div>
+        </div>
+    </div> 
+
+    <div class="mobileBannerLogo" style="display:none"> 
+        <div style="height:4em;">  
+            <a href="https://my.sagicorjamaica.com/ClientWebMobile"> 
+                <img class="sag_logo" src="./Client Web _ Login_files/sagicor-logo-white.png" alt="Logo"> 
+            </a>   
+            <span style="font-size:1.8em">CLIENT WEB</span>  
+        </div>
+    </div>
+   
+   
+    <!-- Main Section-->     
+    <div class="container">
+        <section id="main">
+                 
+ 
+<div class="flat-form col-3">  
+<form action="https://my.sagicorjamaica.com/ClientWeb/User/Login" class="col-12" method="post" novalidate="novalidate"><input id="IP" name="IP" type="hidden" value="207.204.89.25"><input id="Location" name="Location" type="hidden" value="Kingston, Jamaica">    <div id="login" class="form-action show">
+        
+        <h2>SIGN INTO YOUR ACCOUNT</h2>
+        <hr>
+        <ul>
+            <li>
+                <span style="font-weight: bold"><label for="Username">Email:</label></span>
+                <span style="color:red"><span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span></span>
+                <input class="logintxtbox" data-val="true" data-val-required="Please enter username" id="Username" name="Username" placeholder="Email" type="email" value="">
+                              
+            </li>
+            <li>
+                <span style="font-weight: bold"><label for="Password">Password:</label></span>
+                <span style="color:red"> <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span></span>
+                <input class="logintxtbox" data-val="true" data-val-required="Please enter password" id="Password" name="Password" placeholder="Password" type="password"> 
+                         
+            </li>
+                <li> 
+                <span style="font-weight: bold"><label for="CountrySelected">Country:</label></span>
+                <span style="color:red"> <span class="field-validation-valid" data-valmsg-for="CountrySelected" data-valmsg-replace="true"></span></span><br>  
+                <select data-val="true" data-val-required="Please select your country" id="CountrySelected" name="CountrySelected" style="width:100%; background-color:#f7d4d4"><option value="">-Select Country-</option>
+<option value="JA">Jamaica</option>
+<option value="CI">Cayman</option>
+</select>
+                <span id="terms_mobile" style="display:none;"><a href="https://my.sagicorjamaica.com/ClientWeb/Customer/TermsAndConditions">Terms &amp; Conditions</a></span>
+            </li>
+        </ul>
+    </div> 
+        <div>
+        </div>
+    <div style="background-color:#e8e8e8; width:100%;text-align:center; text-align:center; padding-top:5%; padding-bottom:5%;">
+        <input type="submit" value="Sign In" class="button">
+    </div>
+    <div id="registrion_panel">
+        <div style="background-color:#a8a8a8; width:100%; text-align:center;padding-top:5%"> 
+            <a href="https://my.sagicorjamaica.com/ClientWeb/User/Registration">Register Now</a> 
+        </div>
+        <div style="background-color:#a8a8a8; width:100%; text-align:center; padding-top:5%;padding-bottom:5%;"> 
+             <a href="https://my.sagicorjamaica.com/ClientWeb/User/ForgotPassword">Forgot Password?</a> 
+        </div>
+    </div>
+    <div id="contact_panel" style="display:none">
+        <div style=" width:100%;text-align:center;padding-top:5%;padding-bottom:5%;"> 
+            <div>
+                <i class="icon-phone"></i><span><b> CALL TOLL FREE </b></span> <span class="blueColour"><b> <a href="tel:+18887244267">1 888 SAGICOR (724-4267)</a> </b></span> <br> 
+            </div>
+        </div>
+        <div class="footerBanner">
+            <hr>
+            <footer style="text-align:center;margin-bottom:10%">
+                © Sagicor Group Jamaica Limited. All rights reserved. | <a href="https://my.sagicorjamaica.com/ClientWeb/Customer/TermsAndConditions">Terms and Conditions of Use</a> | <a href="https://my.sagicorjamaica.com/ClientWeb/Customer/Glossary">Glossary</a>
+            </footer>
+        </div>
+    </div>
+</form><!--/#login.form-action-->
+</div>
+
+        </section>
+    </div>   
+    
+
+  
+
+
+</body></html>

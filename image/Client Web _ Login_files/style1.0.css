@@ -1,0 +1,162 @@
+﻿/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media only screen and (max-width: 768px) {
+     #table_input input, .uneditable-input {
+         width: auto!important; 
+    }
+    .floatBtn {
+    float:right;
+    }
+    #table_input a {
+     display:block!important;
+    }
+    #pdfGenerator {
+    margin-top:5%;
+    }
+    #balanceInfo {
+        display:none;
+    }
+    .break_line{
+        display:block!important;
+    }
+    #startDate,#endDate 
+    {
+        display:block;
+    }
+    #pendingView {
+    margin-bottom:2%;
+    }
+    .wizard > .steps > ul > li {
+        width: 100%!important;
+    }
+
+    #welcome_img {
+    display:none;
+    }
+    #welcome {
+    /*text-align:center;*/
+    font-size:1.2em;
+    color:#84C44D;
+    }
+    .icon-calendar {
+    display:none;
+    }
+    .footerBanner {
+    bottom:0;
+    }
+    html {
+     background: none; 
+    }
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        margin: 0px;
+    }
+   img {
+       max-width:100%;
+       max-height:90%;
+       vertical-align:bottom!important;
+   }
+
+    #tpHolder {
+    text-align:center;
+    }
+    .mobileBannerLogo img {
+        padding-top: 1%;
+        padding-left: 1%;
+    }
+    #terms_mobile {
+        display:block!important;
+    }
+    
+    #contact_panel {
+     display:block!important;
+    } 
+    .span5 h2 {
+        display:none;  
+    }
+    /*#login {
+        margin-top: 10%;
+    }*/
+    .mobileBannerLogo {
+        display:block!important;
+        background-color:#00a4e9;
+        color:#fff!important;
+    }
+    .topBannerLogo {
+        text-align: center;
+        display:none!important;
+    }
+    .mobileNav {
+           display: inline;
+            color: #fff;
+            font-size: 2em;
+            float: right;
+            margin-right: 5%;
+            margin-top: 3%; 
+    }
+    .desktopNav {
+      display:none!important;
+    }
+    .contact_info {
+    display:none;
+    }
+
+    #terms {
+    display:none;
+    }
+
+    /*.span12 img {
+        display:none;
+    }*/
+    .floatRight {
+        float:none!important;
+        text-align:center!important; 
+    }
+    .navigation{
+        /*display:none!important;*/
+    }
+ 
+  body {
+    padding-left: 0px;
+    padding-right:  0px;
+    }
+
+    select {
+    width:100%!important;
+    }
+
+   .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] { 
+    width: 70%!important;
+    }
+
+    #tpHolder img {
+        border-bottom:1px solid #cac4c4;
+        margin-bottom:5%;
+        padding-bottom:10%;
+    }
+    #sag_map iframe{
+        width:100%!important;
+    }
+
+   
+    #glossary div:not(:first-child) {
+        border-bottom:1px solid #cac4c4;
+        margin-bottom:5%;
+        padding-bottom:5%;
+    }
+}

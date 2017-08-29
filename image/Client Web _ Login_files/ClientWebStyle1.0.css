@@ -1,0 +1,329 @@
+﻿body {
+
+    font-family:'Proxima-Regular' !important;
+    
+}
+
+@font-face
+{
+    font-family: Proxima-Regular;
+    src: url('fonts/Roboto-Regular.ttf'),
+         url('fonts/Roboto-Regular.otf'),
+         url('fonts/Roboto-Regular.eot'); /* IE9 */
+}
+
+@font-face
+{
+    font-family: Proxima-Light;
+    src: url('fonts/Roboto-Light.ttf'),
+         url('fonts/Roboto-Light.otf'),
+         url('fonts/Roboto-Light.eot'); /* IE9 */
+}
+
+@font-face
+{
+    font-family: Proxima-Bold;
+    src: url('fonts/Roboto-Bold.ttf'),
+         url('fonts/Roboto-Bold.otf'),
+         url('fonts/Roboto-Bold.eot'); /* IE9 */
+}
+
+#confirmation .btn-success {
+    width:80%;
+}
+
+/*.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}*/
+/*.striped p:nth-child(odd) { 
+      background-color: #f9f9f9;
+}
+
+.header_text {
+width:3em;
+}
+.striped p {
+    border-top:1px solid #dddddd; 
+    border-bottom:1px solid #dddddd; 
+    padding:1%;
+}*/
+
+.tableInfo .span3 {
+    font-weight:bold;  
+}
+
+.tableInfo .span7 {
+    margin-bottom:1em; 
+}
+.tableInfo {
+    font-size:1.2em;
+}
+.div-striped {
+    background-color: #f9f9f9; 
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+.topBannerLogo
+{
+    width: 100%;
+    background-color: white;
+}
+
+.navigation
+{
+    width:100%;
+    background-color:#494949;
+}
+
+.grayColour
+{
+    color: #707070;
+}
+
+.blueColour
+{
+    color: #2C98D5;
+}
+
+h2,h3
+{
+    font-family: 'Proxima-Regular' !important;
+    font-weight:normal;
+}
+
+.balanceLeftMargin
+{
+    margin-left: 0px;
+}
+p {
+font-size:1.3em;
+}
+#main
+{
+    min-height:400px;
+}
+#mainInternal
+{
+    padding-right:3%;
+    padding-left:3%;
+}
+
+   
+.floatRight
+{
+    float: right;
+}
+
+/*Alert Overide*/
+.alert {
+padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+border: 1px solid #D8D8D8;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+.alert
+{
+    /*color: #2B2B2B;*/
+    
+}
+
+.vertical_space
+{
+    height: 10px;
+    padding-bottom:10px;
+}
+
+.white_container
+{
+    padding: 8px 8px 8px 10px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.box .box-header {
+background: #36a9e1;
+color: white;
+font-size: 16px;
+overflow: hidden;
+/*margin-top:10px;*/
+margin-bottom:10px;
+}
+.box .box-header h2 {
+float: left;
+padding: 10px 0;
+margin: 0 0 0 20px;
+}
+
+.blue {
+color: #36a9e1;
+}
+
+.blueback
+{
+    background-color:#36a9e1;
+    padding:10px;
+}
+
+.whitefont
+{
+    color:white;
+}
+
+.box {
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-box-shadow: 0 1px 0 1px #e4e6eb;
+-moz-box-shadow: 0 1px 0 1px #e4e6eb;
+box-shadow: 0 1px 0 1px #e4e6eb;
+margin: 0 0 30px 0;
+}
+
+.box .box-content {
+padding: 10px;
+background: white;
+}
+
+/*=========Transaction balance Box================*/
+
+.TranBox
+{
+    text-align:center;
+    color:#5F5F5E;
+    
+}
+    .TranBox .greyborder
+    {
+        border-right: 1px solid #B2B2A8;
+    }
+    .TranBox .success
+    {
+        color: #8DBE22;
+    }
+    .TranBox .error
+    {
+        color: #E01D14;
+    }
+
+    .TranBox h3
+    {
+        color: #39A8E0;
+        font-weight: bold;
+    }
+.contactform input[type="text"], 
+.contactform input[type="tel"],
+.contactform input[type="email"],
+.contactform input[type="number"], .contactform textarea
+{
+    width:80%;
+} 
+
+.navlink{
+  color: #ffffff !important;
+  background-color: #39a8e0 !important;
+}
+
+.nav li a:hover {
+    color: #000 !important;
+}
+
+.navbar .divider-vertical {
+    margin: 0 0px;
+}
+
+.policyAlert
+{
+    color: red;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.disbursemnetAlert
+{
+    color:#39A8E0;
+    padding-right: 15px;
+    padding-left: 5px;
+
+}
+
+.info label
+{
+    font-weight:bold !important;
+    font-size:14px !important;
+   
+}
+
+.pieChart {
+  height: 300px;
+}
+
+.errorMessage
+{
+    font-size: 11px;
+    color: red;
+}
+
+/*========= Navigation ================*/
+ 
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #02a3e4; /* Sag Blue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/*#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}*/
+
+.sidenav {
+    padding-top: 15px; 
+
+}
+.sidenav a {font-size: 18px;}
+
